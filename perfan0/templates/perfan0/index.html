@@ -1,0 +1,10 @@
+<h1>Largest Systems</h1>
+{% if biggest_system_list %}
+	<ul>
+	{% for systeminfo in biggest_system_list %}
+		<li><a href="{% url 'perfan0:detail' systeminfo.serialnumberinserv %}">{{ systeminfo.system_companyname }}</a></li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No systems are available.</p>
+{% endif %}
