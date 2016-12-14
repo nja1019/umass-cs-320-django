@@ -1,0 +1,29 @@
+Steps to Install Packages and Run Server:
+
+1. Install virtualenv 
+  https://virtualenv.pypa.io/en/stable/installation/
+  
+2. Install Python2.7 if you do not have it already. 
+  https://www.python.org/download/releases/2.7/
+  
+3. Install Django1.9 
+  pip install Django==1.9
+  (If pip command not found, install pip with "sudo easy_install pip")
+  
+4. Install Postgresql
+  brew install postgresql
+  (You may have to link postgres if there is an error while installing. You can do this with "brew link postgresql"
+  
+5. Install pyscopg2
+  pip install pyscopg2
+  
+ 
+ Now that everything is installed properly (If not message Nick/anyone else for assistance :) ), we are ready to run the server.
+ 
+ If you have not cloned this repo yet, you should do so with "git clone https://github.com/dfaulken/umass-cs-320-django.git".
+ 
+ From there, change directories into umass-cs-320-django and run "Python manage.py runserver".
+ 
+ In your browser, visit http://127.0.0.1:8000/perfan0/. 
+ 
+ In the words of the great Emeril Lagasse, BAM.
